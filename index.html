@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,11 +9,47 @@
 <body>
     <div class="container">
         <h1>Convite Especial</h1>
-        <p>Querido(a) padrinho/madrinha, sua presença é essencial para tornar nosso dia ainda mais especial. Escaneie o QRCode abaixo para escolher uma data para nosso encontro!</p>
-        <div id="qrcode"></div>
+        <p>Querido(a) padrinho/madrinha, sua presença é essencial para tornar nosso dia ainda mais especial.</p>
+    
+        <!-- Botão para ver mais detalhes -->
+        <button id="show-more" class="btn">Pera que tem mais coisa, clica aqui</button>
+    
+        <!-- Conteúdo escondido -->
+        <div id="details" class="hidden">
+            <!-- Contador Regressivo -->
+            <div id="countdown">
+                <h2>Faltam:</h2>
+                <p id="timer">Carregando...</p>
+            </div>
+    
+            <!-- Formulário -->
+            <form id="appointment-form">
+                <h2>Escolha uma data para nosso encontro:</h2>
+                <label for="date">Data:</label>
+                <input type="date" id="date" name="date" required>
+                <label for="time">Hora:</label>
+                <input type="time" id="time" name="time" required>
+                <label for="location">Local:</label>
+                <input type="text" id="location" name="location" placeholder="Digite o local" required>
+                <button type="submit">Enviar</button>
+            </form>
+    
+            <!-- Playlist -->
+            <div id="playlist">
+                <h2>Colabore com nossa playlist de casamento:</h2>
+                <iframe 
+                    src="https://open.spotify.com/embed/playlist/3Xyj5C765mTr94frDggvHQ?si=57c903eca16f44a7" 
+                    width="300" 
+                    height="380" 
+                    frameborder="0" 
+                    allowtransparency="true" 
+                    allow="encrypted-media">
+                </iframe>
+            </div>
+        </div>
+    
         <p class="footer">Com carinho, Felipe & Aline ❤️</p>
     </div>
-    <script src="qrcode.min.js"></script>
-    <script src="script.js"></script>
+    <script src="script.js"></script> 
 </body>
 </html>

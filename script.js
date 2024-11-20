@@ -1,5 +1,5 @@
 // URL da página de agendamento (ajuste para o link que quiser)
-const url = "https://felipeprestess.github.io/convite-padrinhos/agendamento";
+const url = "https://felipeprestess.github.io/convite-padrinhos/";
 
 // Geração do QRCode
 const qrcodeContainer = document.getElementById("qrcode");

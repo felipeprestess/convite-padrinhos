@@ -3,22 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;700&display=swap" rel="stylesheet">
     <title>Convite dos Padrinhos</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <h1>Convite Especial</h1>
-        <p>Querido(a) padrinho/madrinha, sua presença é essencial para tornar nosso dia ainda mais especial.</p>
+        <p class="overlay-text">Vocês que fizeram parte de momentos especiais de nossas vidas, queremos lhe convidar para mais um!</p>
     
         <!-- Botão para ver mais detalhes -->
-        <button id="show-more" class="btn">Pera que tem mais coisa, clica aqui</button>
+        <button id="show-more" class="btn">Clica aqui e veja mais</button>
     
         <!-- Conteúdo escondido -->
         <div id="details" class="hidden">
+
+            <div>
+                <p class="overlay-text">
+                    Vocês são parte essencial das nossas vidas, e não poderíamos imaginar esse momento
+                     especial sem vocês ao nosso lado. É com muito amor que os convidamos para serem nossos
+                     padrinhos de casamento. Aceitam embarcar nessa jornada conosco?
+                </p>
+            </div>
+
             <!-- Contador Regressivo -->
             <div id="countdown">
-                <h2>Faltam:</h2>
+                <h2>Nosso casamento está marcado para o dia 13/11/2025. Então faltam:</h2>
                 <p id="timer">Carregando...</p>
             </div>
     
@@ -31,7 +42,7 @@
                 <input type="time" id="time" name="time" required>
                 <label for="location">Local:</label>
                 <input type="text" id="location" name="location" placeholder="Digite o local" required>
-                <button type="submit">Enviar</button>
+                <button type="submit">É isso, bore</button>
             </form>
     
             <!-- Playlist -->
@@ -48,7 +59,7 @@
             </div>
         </div>
     
-        <p class="footer">Com carinho, Felipe & Aline ❤️</p>
+        <p class="footer">Com carinho, Aline & Felipe ❤️</p>
     </div>
     <script src="script.js"></script> 
 </body>

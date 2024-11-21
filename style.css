@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Playfair Display', serif; /* Elegante para um convite */
     background-color: #f9f9f9;
     margin: 0;
     padding: 0;
@@ -7,22 +7,57 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh; /* Garante altura mínima da página */
-    color: #333;
+    color: #FFFFFF;
 }
 
 .container {
+    background-image: url('bg-convite.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     text-align: center;
-    background: #fff;
+    backdrop-filter: blur(5px);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 90%;
-    max-width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 800px;
     transition: transform 0.3s ease, height 0.3s ease; /* Animação ao expandir */
+    margin: 0 auto;
+    color: #FFFFFF;
 }
 
-h1 {
-    color: #00bf63;
+.overlay-text {
+    position: relative;
+    display: inline-block; /* Ajusta o tamanho exato ao texto */
+    padding: 10px 20px; /* Adiciona espaço interno */
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo branco semi-transparente */
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.6), rgba(240, 240, 240, 0.1));
+    border-radius: 8px; /* Cantos arredondados para suavidade */
+    color: #354D35; /* Ou um tom mais escuro para contraste */
+    font-family: 'EB Garamond', serif;
+    font-size: 1rem;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #D4AF37; /* Dourado claro */
+    font-family: 'EB Garamond', serif; /* Elegante */
+}
+
+.container h1 {
+    font-size: 60px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-family: 'EB Garamond', serif;
+}
+
+.container p {
+    font-size: 20px;
+}
+
+p {
+    color: #8AA88A; /* Cinza claro */
+    font-family: 'EB Garamond', serif;
 }
 
 #countdown {
@@ -31,13 +66,18 @@ h1 {
 
 #countdown h2 {
     font-size: 1.2rem;
-    color: #00bf63;
+    color: #354D35;
 }
 
 #timer {
-    font-size: 1.5rem;
+    font-size: 3rem;
     font-weight: bold;
-    color: #333;
+    color: #D4AF37; /* Texto branco */
+    font-family: 'EB Garamond', serif;
+}
+
+#appointment-form h2 {
+    text-align: center;
 }
 
 form {
@@ -49,30 +89,43 @@ form label {
     display: block;
     margin-top: 10px;
     font-weight: bold;
+    color: #FFFFFF; /* Texto branco */
 }
 
-form input {
+form input, form textarea {
     width: 100%;
-    padding: 8px;
+    padding: 10px;
     margin-top: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #D4AF37; /* Borda dourada */
     border-radius: 5px;
     box-sizing: border-box;
+    background-color: #FFFFFF; /* Fundo branco */
+    color: #354D35; /* Texto verde escuro */
+    font-family: 'Roboto', sans-serif;
 }
 
-form button {
+form button, .btn {
     margin-top: 15px;
     padding: 10px 20px;
-    background-color: #00bf63;
-    color: #fff;
+    background-color: #354D35; /* Verde escuro */
+    color: #FFFFFF; /* Texto branco */
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 1rem;
 }
 
-form button:hover {
-    background-color: #009b53;
+form button{
+    margin: 15px auto; /* Margem automática para centralização horizontal */
+    display: block; /* Garante que o botão seja tratado como um bloco */
+    padding: 10px 20px;
+    background-color: #354D35;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-align: center; /* Apenas para o texto no botão */
 }
 
 #playlist {
@@ -81,13 +134,14 @@ form button:hover {
 
 #playlist h2 {
     font-size: 1.2rem;
-    color: #00bf63;
+    color: #D4AF37; /* Dourado claro */
 }
 
 .footer {
     margin-top: 20px;
     font-size: 0.9rem;
-    color: #555;
+    color: #354D35;
+    font-family: 'EB Garamond', serif;
 }
 
 iframe {
@@ -116,7 +170,7 @@ body.expanded {
 .btn {
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #00bf63;
+    background-color: #354D35;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -127,7 +181,7 @@ body.expanded {
 }
 
 .btn:hover {
-    background-color: #009b53;
+    background-color: #0a643a;
     animation: none; /* Para a animação ao passar o mouse */
 }
 

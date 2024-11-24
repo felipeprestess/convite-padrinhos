@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Dados Armazenados</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Dados dos Padrinhos</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Padrinhos</th>
+                <th>Data</th>
+                <th>Hora</th>
+                <th>Local</th>
+            </tr>
+        </thead>
+        <tbody id="data-list">
+            <!-- Os dados serão inseridos aqui -->
+        </tbody>
+    </table>
+    <script src="script-admin.js"></script>
+</body>
+
+</html>

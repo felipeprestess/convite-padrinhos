@@ -34,35 +34,3 @@ function updateCountdown() {
 // Atualiza o contador a cada segundo
 setInterval(updateCountdown, 1000);
 updateCountdown();
-
-form.addEventListener("submit", async (event) => {
-    event.preventDefault();
-
-    const padrinhoData = {
-        Nome: document.getElementById("name").value || "Casal de padrinhos",
-        Data: document.getElementById("date").value,
-        Hora: document.getElementById("time").value,
-        Local: document.getElementById("location").value,
-    };
-
-    try {
-        const response = await fetch("https://seuservidor/api/padrinhos", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify(padrinhoData),
-        }); 
-
-        if (response.ok) {
-            alert("Dados enviados com sucesso!");
-        } else {
-            alert("Ocorreu um erro ao enviar os dados.");
-        }
-    } catch (error) {
-        console.error("Erro:", error);
-        alert("Erro ao conectar com o servidor.");
-    }
-
-    form.reset();
-});

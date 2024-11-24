@@ -185,3 +185,7 @@ body.expanded {
     animation: none; /* Para a animação ao passar o mouse */
 }
 
+.hidden-load {
+    display: none;
+}
+

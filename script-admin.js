@@ -36,7 +36,7 @@
      dataList.innerHTML = "<tr><td colspan='4'>Nenhum dado armazenado.</td></tr>";
  } else {
      storedData.forEach((item, index) => {
-         if (item.couple !== '') {
+         if (item.couple !== '' && !item.couple.toLowerCase().includes('teste')) {
              dataList.innerHTML += `
                  <tr>
                      <td>${index + 1}</td>

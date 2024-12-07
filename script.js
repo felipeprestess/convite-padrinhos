@@ -1,1 +1,156 @@
-const _0x15daba=_0x2dde;(function(_0x189fe2,_0x25dcb3){const _0x1549e4=_0x2dde,_0x469ffd=_0x189fe2();while(!![]){try{const _0x596ca0=-parseInt(_0x1549e4(0x8c))/0x1+parseInt(_0x1549e4(0x8b))/0x2*(-parseInt(_0x1549e4(0xc6))/0x3)+-parseInt(_0x1549e4(0xb3))/0x4+-parseInt(_0x1549e4(0xc7))/0x5+parseInt(_0x1549e4(0xaa))/0x6*(parseInt(_0x1549e4(0xa7))/0x7)+parseInt(_0x1549e4(0xc0))/0x8*(-parseInt(_0x1549e4(0xc9))/0x9)+parseInt(_0x1549e4(0xb0))/0xa;if(_0x596ca0===_0x25dcb3)break;else _0x469ffd['push'](_0x469ffd['shift']());}catch(_0x412419){_0x469ffd['push'](_0x469ffd['shift']());}}}(_0x5a5d,0x5b40e));const form=document[_0x15daba(0xcb)](_0x15daba(0x91)),loadingIndicator=document[_0x15daba(0xcb)](_0x15daba(0x8a)),submitButton=form[_0x15daba(0xa9)]('button[type=\x22submit\x22]'),calendarInput=document[_0x15daba(0xcb)]('calendar'),showMoreButton=document['getElementById'](_0x15daba(0x9f)),detailsSection=document['getElementById']('details'),textoInicial=document[_0x15daba(0xcb)]('initial-text');showMoreButton[_0x15daba(0x98)](_0x15daba(0xbd),()=>{const _0x356478=_0x15daba;detailsSection['classList'][_0x356478(0xb5)](_0x356478(0xab)),showMoreButton[_0x356478(0xa2)][_0x356478(0x8f)]='none',document[_0x356478(0xc4)][_0x356478(0xc1)][_0x356478(0xad)](_0x356478(0xa5)),textoInicial[_0x356478(0xae)]();});const weddingDateCalendar=new Date('2025-09-13T00:00:00'),maxDate=new Date(weddingDateCalendar);maxDate[_0x15daba(0xa4)](maxDate['getDate']()-0x1e);function _0x2dde(_0x53e2bf,_0x4ce55a){const _0x5a5d5c=_0x5a5d();return _0x2dde=function(_0x2dde0b,_0x1ca756){_0x2dde0b=_0x2dde0b-0x88;let _0xa83d16=_0x5a5d5c[_0x2dde0b];return _0xa83d16;},_0x2dde(_0x53e2bf,_0x4ce55a);}function initializeCalendar(_0x1e031f){const _0x44131a=_0x15daba;flatpickr(calendarInput,{'dateFormat':_0x44131a(0x93),'minDate':_0x44131a(0xb6),'maxDate':maxDate,'disable':_0x1e031f,'onChange':(_0x40d71d,_0x4d4672)=>{const _0x38d6bd=_0x44131a;document['getElementById'](_0x38d6bd(0xa3))[_0x38d6bd(0xc3)]=_0x4d4672;}});}function _0x5a5d(){const _0x34918b=['today','submit','disabled','textContent','2025-09-13T00:00:00','time','stringify','click','Erro\x20ao\x20atualizar\x20os\x20dados\x20no\x20JSONBin','location','320440xZHByj','classList','timer','value','body','json','177CECpgO','378595KFraww','push','153NyIuPo','error','getElementById','GET','Erro\x20ao\x20buscar\x20os\x20dados\x20existentes\x20no\x20JSONBin','loading','5294PNbuBb','43969rOLsSP','Erro\x20ao\x20carregar\x20as\x20datas:','floor','display','map','appointment-form','Casal\x20de\x20padrinhos','Y-m-d','record','https://api.jsonbin.io/v3/b/67425c6dad19ca34f8cf2944','Erro:','Enviando...','addEventListener','É\x20isso,\x20bore','Erro\x20ao\x20buscar\x20as\x20datas\x20existentes\x20no\x20JSONBin','Chegou\x20o\x20grande\x20dia!','getTime','\x20dias,\x20','hidden-load','show-more','PUT','$2a$10$G9vBMF6/d2pRjDPnBh/VgOD7klnG6/GnHUDMRCkE3.ezxvxtPNKky','style','date','setDate','expanded','preventDefault','40075iPIYqn','application/json','querySelector','54cKRitd','hidden','padrinhos','add','remove','couple','18129080cnOuCz','Erro\x20ao\x20enviar\x20os\x20dados.\x20Consulte\x20o\x20console\x20para\x20mais\x20informações.','reset','2135452SQnOvP','Dados\x20enviados\x20com\x20sucesso!','toggle'];_0x5a5d=function(){return _0x34918b;};return _0x5a5d();}async function fetchDisabledDates(){const _0x10e6de=_0x15daba;try{const _0x23cf02=await fetch(_0x10e6de(0x95),{'method':_0x10e6de(0x88),'headers':{'X-Master-Key':_0x10e6de(0xa1)}});if(!_0x23cf02['ok'])throw new Error(_0x10e6de(0x9a));const _0x259b66=await _0x23cf02[_0x10e6de(0xc5)](),_0xfb3e3b=_0x259b66['record'][_0x10e6de(0xac)][_0x10e6de(0x90)](_0x399d4f=>_0x399d4f[_0x10e6de(0xa3)]);initializeCalendar(_0xfb3e3b);}catch(_0x571b9b){console['error'](_0x10e6de(0x8d),_0x571b9b),alert('Erro\x20ao\x20carregar\x20as\x20datas\x20disponíveis.');}}fetchDisabledDates();const weddingDate=new Date(_0x15daba(0xba))['getTime']();function updateCountdown(){const _0x3f79d0=_0x15daba,_0xedb5b6=new Date()[_0x3f79d0(0x9c)](),_0x2582a1=weddingDate-_0xedb5b6;if(_0x2582a1>0x0){const _0x28d674=Math[_0x3f79d0(0x8e)](_0x2582a1/(0x3e8*0x3c*0x3c*0x18)),_0x832a68=Math[_0x3f79d0(0x8e)](_0x2582a1%(0x3e8*0x3c*0x3c*0x18)/(0x3e8*0x3c*0x3c)),_0x2e61a0=Math[_0x3f79d0(0x8e)](_0x2582a1%(0x3e8*0x3c*0x3c)/(0x3e8*0x3c)),_0x241b71=Math['floor'](_0x2582a1%(0x3e8*0x3c)/0x3e8);document['getElementById']('timer')['textContent']=_0x28d674+_0x3f79d0(0x9d)+_0x832a68+'h\x20'+_0x2e61a0+'m\x20'+_0x241b71+'s';}else document[_0x3f79d0(0xcb)](_0x3f79d0(0xc2))[_0x3f79d0(0xb9)]=_0x3f79d0(0x9b);}setInterval(updateCountdown,0x3e8),updateCountdown(),form['addEventListener'](_0x15daba(0xb7),async _0x360142=>{const _0x515062=_0x15daba;_0x360142[_0x515062(0xa6)](),loadingIndicator[_0x515062(0xc1)]['remove']('hidden-load'),submitButton[_0x515062(0xb8)]=!![],submitButton[_0x515062(0xb9)]=_0x515062(0x97);const _0x1e2f79={'couple':document[_0x515062(0xcb)](_0x515062(0xaf))[_0x515062(0xc3)]||_0x515062(0x92),'date':document[_0x515062(0xcb)](_0x515062(0xa3))[_0x515062(0xc3)],'time':document[_0x515062(0xcb)](_0x515062(0xbb))[_0x515062(0xc3)],'location':document[_0x515062(0xcb)](_0x515062(0xbf))[_0x515062(0xc3)]};try{const _0x27a8eb=await fetch('https://api.jsonbin.io/v3/b/67425c6dad19ca34f8cf2944',{'method':'GET','headers':{'X-Master-Key':_0x515062(0xa1)}});if(!_0x27a8eb['ok'])throw new Error(_0x515062(0x89));const _0x121ca5=await _0x27a8eb[_0x515062(0xc5)](),_0x76081e=_0x121ca5[_0x515062(0x94)][_0x515062(0xac)]||[];_0x76081e[_0x515062(0xc8)](_0x1e2f79);const _0x386bf7=await fetch('https://api.jsonbin.io/v3/b/67425c6dad19ca34f8cf2944',{'method':_0x515062(0xa0),'headers':{'Content-Type':_0x515062(0xa8),'X-Master-Key':_0x515062(0xa1)},'body':JSON[_0x515062(0xbc)]({'padrinhos':_0x76081e})});if(_0x386bf7['ok'])alert(_0x515062(0xb4)),submitButton[_0x515062(0xb9)]='Enviado',submitButton[_0x515062(0xae)]();else throw new Error(_0x515062(0xbe));}catch(_0x16b11f){console[_0x515062(0xca)](_0x515062(0x96),_0x16b11f),alert(_0x515062(0xb1)),submitButton[_0x515062(0xb8)]=![],submitButton[_0x515062(0xb9)]=_0x515062(0x99);}finally{loadingIndicator[_0x515062(0xc1)][_0x515062(0xad)](_0x515062(0x9e));}form[_0x515062(0xb2)]();});
+const form = document.getElementById('appointment-form');
+const loadingIndicator = document.getElementById("loading");
+const submitButton = form.querySelector('button[type="submit"]'); // Seleciona o botão de submissão
+const calendarInput = document.getElementById("calendar");
+const timeInput = document.getElementById("time");
+
+const showMoreButton = document.getElementById("show-more");
+const detailsSection = document.getElementById("details");
+const textoInicial = document.getElementById("initial-text");
+showMoreButton.addEventListener("click", () => {
+    detailsSection.classList.toggle("hidden");
+    showMoreButton.style.display = "none";
+    document.body.classList.add("expanded");
+    textoInicial.remove();
+});
+
+const weddingDate = new Date("2025-09-13T00:00:00").getTime();
+
+const maxDate = new Date(weddingDate);
+maxDate.setDate(maxDate.getDate() - 30); // Subtrai 30 dias
+
+function initializeCalendar(disabledDates) {
+    flatpickr(calendarInput, {
+        dateFormat: "Y-m-d",
+        minDate: "today",
+        maxDate: maxDate, 
+        disable: disabledDates, 
+        onChange: (selectedDates, dateStr) => {
+            document.getElementById("date").value = dateStr;
+        }
+    });
+}
+
+timeInput.addEventListener("change", () => {
+    const selectedTime = timeInput.value; // Hora selecionada no formato HH:mm
+    const [hours, minutes] = selectedTime.split(":").map(Number);
+
+    if (
+        (hours > 21 || (hours === 21 && minutes > 30)) || // Após 21:30
+        (hours < 9 || (hours === 9 && minutes < 30))     // Antes de 09:30
+    ) {
+        alert("Não foi dessa vez, champs. Escolha entre 09:30 e 21:30.");
+        timeInput.value = ""; // Limpa o campo de hora
+    }
+});
+
+// Buscar as datas já agendadas no JSONBin
+async function fetchDisabledDates() {
+    try {
+        const response = await fetch("https://api.jsonbin.io/v3/b/67425c6dad19ca34f8cf2944", {
+            method: "GET",
+            headers: {
+                "X-Master-Key": "$2a$10$G9vBMF6/d2pRjDPnBh/VgOD7klnG6/GnHUDMRCkE3.ezxvxtPNKky"
+            }
+        });
+
+        if (!response.ok) {
+            throw new Error("Erro ao buscar as datas existentes no JSONBin");
+        }
+
+        const binData = await response.json();
+        const storedDates = binData.record.padrinhos.map(p => p.date); // Extrai as datas já agendadas
+        initializeCalendar(storedDates); // Inicializa o calendário com as datas bloqueadas
+    } catch (error) {
+        console.error("Erro ao carregar as datas:", error);
+        alert("Erro ao carregar as datas disponíveis.");
+    }
+}
+
+// Chamar a função para carregar o calendário
+fetchDisabledDates();
+
+
+function updateCountdown() {
+    const now = new Date().getTime();
+    const distance = weddingDate - now;
+
+    if (distance > 0) {
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("timer").textContent = `${days} dias, ${hours}h ${minutes}m ${seconds}s`;
+    } else {
+        document.getElementById("timer").textContent = "Chegou o grande dia!";
+    }
+}
+
+setInterval(updateCountdown, 1000);
+updateCountdown();
+
+// Envio do formulário
+form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    // Mostrar o spinner
+    loadingIndicator.classList.remove("hidden-load");
+    submitButton.disabled = true; // Desativa o botão para evitar múltiplos envios
+    submitButton.textContent = "Enviando..."; // Muda o texto do botão para feedback visual
+
+    const padrinhoData = {
+        couple: document.getElementById("couple").value || "Casal de padrinhos",
+        date: document.getElementById("date").value,
+        time: document.getElementById("time").value,
+        location: document.getElementById("location").value,
+    };
+
+    try {
+        // Buscar os dados existentes no JSONBin
+        const getResponse = await fetch("https://api.jsonbin.io/v3/b/67425c6dad19ca34f8cf2944", {
+            method: "GET",
+            headers: {
+                "X-Master-Key": "$2a$10$G9vBMF6/d2pRjDPnBh/VgOD7klnG6/GnHUDMRCkE3.ezxvxtPNKky"
+            }
+        });
+
+        if (!getResponse.ok) {
+            throw new Error("Erro ao buscar os dados existentes no JSONBin");
+        }
+
+        const binData = await getResponse.json();
+        const currentPadrinhos = binData.record.padrinhos || [];
+
+        // Adicionar o novo dado ao array existente
+        currentPadrinhos.push(padrinhoData);
+
+        // Atualizar o bin com os dados
+        const updateResponse = await fetch("https://api.jsonbin.io/v3/b/67425c6dad19ca34f8cf2944", {
+            method: "PUT",
+            headers: {
+                "Content-Type": "application/json",
+                "X-Master-Key": "$2a$10$G9vBMF6/d2pRjDPnBh/VgOD7klnG6/GnHUDMRCkE3.ezxvxtPNKky"
+            },
+            body: JSON.stringify({ padrinhos: currentPadrinhos })
+        });
+
+        if (updateResponse.ok) {
+            alert("Dados enviados com sucesso!");
+            submitButton.textContent = "Enviado";
+            submitButton.remove();
+        } else {
+            throw new Error("Erro ao atualizar os dados no JSONBin");
+        }
+    } catch (error) {
+        console.error("Erro:", error);
+        alert("Erro ao enviar os dados. Consulte o console para mais informações.");
+        submitButton.disabled = false; 
+        submitButton.textContent = "É isso, bore"; 
+    } finally {
+        // Esconder o spinner de carregamento
+        loadingIndicator.classList.add("hidden-load");
+    }
+
+    form.reset();
+});

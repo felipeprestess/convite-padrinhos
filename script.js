@@ -101,7 +101,7 @@ form.addEventListener("submit", async (event) => {
 
     const padrinhoData = {
         couple: document.getElementById("couple").value || "Casal de padrinhos",
-        date: document.getElementById("date").value,
+        date: document.getElementById("calendar").value,
         time: document.getElementById("time").value,
         location: document.getElementById("location").value,
     };
